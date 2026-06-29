@@ -7,6 +7,7 @@ import { motion } from "framer-motion"
 import FeaturedCollections from "@/components/featured-collections"
 import AnimatedButton from "@/components/animated-button"
 import { ArrowRight } from "lucide-react"
+import { withBasePath } from "@/lib/base-path"
 
 
 export default function ContactPage() {
@@ -18,7 +19,7 @@ export default function ContactPage() {
        {/* Hero Section */}
       <section className="relative h-[50vh] w-full">
         <Image
-          src="/new zealand/new-zealand-17.jpg?height=800&width=1920"
+          src={withBasePath("/new zealand/new-zealand-17.jpg?height=800&width=1920")}
           alt="Contact X100"
           fill
           priority

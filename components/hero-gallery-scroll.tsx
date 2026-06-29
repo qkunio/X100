@@ -6,6 +6,7 @@ import AnimatedButton from "@/components/animated-button"
 import { ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { withBasePath } from "@/lib/base-path"
 
 const IMAGES = [
   "/qkunio/Jeju-Korea-2.JPG",
@@ -26,7 +27,7 @@ export function HeroGalleryScroll() {
           >
             <img
               className="size-full object-cover object-center"
-              src={imageUrl}
+              src={withBasePath(imageUrl)}
               alt=""
             />
           </BentoCell>
@@ -61,7 +62,7 @@ export function HeroDemo1() {
           >
             <img
               className="size-full object-cover object-center"
-              src={imageUrl}
+              src={withBasePath(imageUrl)}
               alt=""
             />
           </BentoCell>
@@ -108,7 +109,7 @@ export function HeroDemo2() {
               className="size-full object-cover object-center"
               width="100%"
               height="100%"
-              src={imageUrl}
+              src={withBasePath(imageUrl)}
               alt=""
             />
           </BentoCell>
@@ -154,7 +155,7 @@ export function HeroDemo3() {
               className="size-full object-cover object-center"
               width="100%"
               height="100%"
-              src={imageUrl}
+              src={withBasePath(imageUrl)}
               alt=""
             />
           </BentoCell>

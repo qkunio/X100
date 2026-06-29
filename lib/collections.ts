@@ -1,4 +1,5 @@
 import type { Collection, Photo } from "./types"
+import { withBasePath } from "./base-path"
 
 // Collection format mapping
 const collectionFormats: Record<string, string> = {
@@ -79,7 +80,7 @@ function getCollectionImages(collectionSlug: string): Photo[] {
   return Array.from({ length: collectionInfo.count }, (_, i) => {
     const index = i + 1
     const format = collectionSlug === 'bali' && index >= 10 && index <= 15 ? 'jpg' : collectionFormats[collectionSlug]
-    const imagePath = `/${folderName}/${collectionSlug}-${index}.${format}`
+    const imagePath = withBasePath(`/${folderName}/${collectionSlug}-${index}.${format}`)
     const dimensions = aspectRatios[index % aspectRatios.length]
 
     return {
@@ -97,7 +98,7 @@ function getCollectionImages(collectionSlug: string): Photo[] {
 function getCoverImagePath(folderName: string): string {
   const collectionSlug = folderName.toLowerCase().replace(' ', '-')
   const format = collectionFormats[collectionSlug] || 'jpg'
-  return `/${folderName}/cover.${format}`
+  return withBasePath(`/${folderName}/cover.${format}`)
 }
 
 // Collections data

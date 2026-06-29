@@ -6,6 +6,7 @@ import CollectionGrid from "@/components/collection-grid"
 import TagFilters from "@/components/tag-filters"
 import Loading from "@/components/loading"
 import { motion } from "framer-motion"
+import { withBasePath } from "@/lib/base-path"
 
 export default function ShowcasePage() {
   return (
@@ -16,7 +17,7 @@ export default function ShowcasePage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] w-full">
         <Image
-          src="/Morocco/morocco-11.webp?height=800&width=1920"
+          src={withBasePath("/Morocco/morocco-11.webp?height=800&width=1920")}
           alt="Photography collections showcase"
           fill
           priority

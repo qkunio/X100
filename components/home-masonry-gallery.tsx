@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
+import { withBasePath } from "@/lib/base-path"
 
 const QKUNIO_PHOTOS = [
   {
@@ -110,7 +111,7 @@ export function HomeMasonryGallery() {
                 >
                   <div className="absolute inset-0 overflow-hidden rounded-3xl bg-secondary [backface-visibility:hidden]">
                     <img
-                      src={photo.src}
+                      src={withBasePath(photo.src)}
                       alt={photo.alt}
                       className="absolute inset-0 size-full object-cover transition duration-700 group-hover:scale-105 group-hover:opacity-90"
                     />
