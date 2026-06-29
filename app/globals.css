@@ -7,6 +7,7 @@
   --font-old-london: "Old London";
   --font-boulevard-saint-denis: "Boulevard Saint Denis";
   --font-schools-out: "Schools Out";
+  --font-fulu-melody: "Fulu Melody";
 }
 
 @layer utilities {
@@ -197,6 +198,14 @@ body.sounds-muted a {
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Fulu Melody";
+  src: url("/fonts/FuluMelody-2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
     
          h1,
          h2,
@@ -222,6 +231,10 @@ body.sounds-muted a {
 
 .font-schools-out {
   font-family: var(--font-schools-out);
+}
+
+.font-fulu-melody {
+  font-family: var(--font-fulu-melody);
 }
 
 /* Dynamic frame layout */
