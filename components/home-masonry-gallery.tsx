@@ -11,7 +11,7 @@ const QKUNIO_PHOTOS = [
     width: 3240,
     height: 4864,
     alt: "Jeju Korea frame 2",
-    story: "傍晚的码头把光收进水里，船只安静得像刚写完的一句话。",
+    story: "傍晚的码头，把光收进水中",
   },
   {
     id: "jeju-korea-1",
@@ -19,7 +19,7 @@ const QKUNIO_PHOTOS = [
     width: 1000,
     height: 750,
     alt: "Jeju Korea frame 1",
-    story: "风从树影里经过，远处的海面替这一刻慢慢发亮。",
+    story: "海面泛舟",
   },
   {
     id: "jeju-korean-3",
@@ -27,7 +27,7 @@ const QKUNIO_PHOTOS = [
     width: 3621,
     height: 2926,
     alt: "Jeju Korean frame 3",
-    story: "路过的人和云都没有停下，只留下柔软的一秒。",
+    story: "济州西线海边的钢琴",
   },
   {
     id: "xiamen-fujian-1",
@@ -35,7 +35,7 @@ const QKUNIO_PHOTOS = [
     width: 3629,
     height: 1901,
     alt: "Xiamen Fujian frame 1",
-    story: "厦门的风很轻，像把一段旅行折进了蓝色里。",
+    story: "海边日出，孤舟慢渡",
   },
   {
     id: "longyan-fujian-1",
@@ -43,7 +43,7 @@ const QKUNIO_PHOTOS = [
     width: 1080,
     height: 1920,
     alt: "Longyan Fujian frame 1",
-    story: "山城的日常藏在转角，抬头时，光正好落下来。",
+    story: "山城一角，清泉石上流",
   },
   {
     id: "longyan-fujian-2",
@@ -51,7 +51,7 @@ const QKUNIO_PHOTOS = [
     width: 1080,
     height: 1920,
     alt: "Longyan Fujian frame 2",
-    story: "一条街慢慢醒来，熟悉的声音从远处靠近。",
+    story: "老街的垂钓者",
   },
   {
     id: "longyan-fujian-3",
@@ -59,7 +59,7 @@ const QKUNIO_PHOTOS = [
     width: 810,
     height: 1440,
     alt: "Longyan Fujian frame 3",
-    story: "雨后的空气很干净，连影子都变得清楚。",
+    story: "从山城到同济",
   },
   {
     id: "huangxing-park-shanghai-1",
@@ -83,7 +83,7 @@ const QKUNIO_PHOTOS = [
     width: 3488,
     height: 2378,
     alt: "Longyan Fujian frame 4",
-    story: "回家的路总有熟悉的坡度，走慢一点就会看见风景。",
+    story: "回家的路，总有熟悉的坡度",
   },
   {
     id: "longyan-fujian-5",
@@ -91,7 +91,7 @@ const QKUNIO_PHOTOS = [
     width: 2598,
     height: 4617,
     alt: "Longyan Fujian frame 5",
-    story: "高处的天空离人很近，像一封没有寄出的信。",
+    story: "水库旁的卡车和牛群",
   },
   {
     id: "xiamen-fujian-2",
