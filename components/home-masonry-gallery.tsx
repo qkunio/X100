@@ -30,6 +30,14 @@ const QKUNIO_PHOTOS = [
     story: "济州西线海边的钢琴",
   },
   {
+    id: "jeju-korean-4",
+    src: "/qkunio/Jeju-Korean-4.JPG",
+    width: 1831,
+    height: 1272,
+    alt: "Jeju Korean frame 4",
+    story: "在涯月邑，随手一拍便是美景",
+  },
+  {
     id: "xiamen-fujian-1",
     src: "/qkunio/%E5%8E%A6%E9%97%A8-%E7%A6%8F%E5%BB%BA-1.JPG",
     width: 3629,
