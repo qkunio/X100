@@ -54,6 +54,41 @@ const QKUNIO_PHOTOS = [
     height: 1440,
     alt: "Longyan Fujian frame 3",
   },
+  {
+    id: "huangxing-park-shanghai-1",
+    src: "/qkunio/%E9%BB%84%E5%85%B4%E5%85%AC%E5%9B%AD-%E4%B8%8A%E6%B5%B7-1.PNG",
+    width: 1448,
+    height: 1086,
+    alt: "Huangxing Park Shanghai",
+  },
+  {
+    id: "jiading-library-tongji-1",
+    src: "/qkunio/%E5%98%89%E5%AE%9A%E5%9B%BE%E4%B9%A6%E9%A6%86-%E5%90%8C%E6%B5%8E-1.JPG",
+    width: 1266,
+    height: 845,
+    alt: "Jiading Library Tongji",
+  },
+  {
+    id: "longyan-fujian-4",
+    src: "/qkunio/%E9%BE%99%E5%B2%A9-%E7%A6%8F%E5%BB%BA-4.JPG",
+    width: 3488,
+    height: 2378,
+    alt: "Longyan Fujian frame 4",
+  },
+  {
+    id: "longyan-fujian-5",
+    src: "/qkunio/%E9%BE%99%E5%B2%A9-%E7%A6%8F%E5%BB%BA-5.JPG",
+    width: 2598,
+    height: 4617,
+    alt: "Longyan Fujian frame 5",
+  },
+  {
+    id: "xiamen-fujian-2",
+    src: "/qkunio/%E5%8E%A6%E9%97%A8-%E7%A6%8F%E5%BB%BA-2.JPG",
+    width: 6000,
+    height: 4000,
+    alt: "Xiamen Fujian frame 2",
+  },
 ]
 
 export function HomeMasonryGallery() {
