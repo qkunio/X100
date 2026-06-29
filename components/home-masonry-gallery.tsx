@@ -51,7 +51,7 @@ const QKUNIO_PHOTOS = [
     width: 1080,
     height: 1920,
     alt: "Longyan Fujian frame 1",
-    story: "山城一角，清泉石上流",
+    story: "清泉石上流",
   },
   {
     id: "longyan-fujian-2",
@@ -75,7 +75,7 @@ const QKUNIO_PHOTOS = [
     width: 1448,
     height: 1086,
     alt: "Huangxing Park Shanghai",
-    story: "公园里的一小片安静，替城市保留了呼吸。",
+    story: "公园一角",
   },
   {
     id: "jiading-library-tongji-1",
@@ -83,7 +83,7 @@ const QKUNIO_PHOTOS = [
     width: 1266,
     height: 845,
     alt: "Jiading Library Tongji",
-    story: "书页没有声音，光却在墙面上读了很久。",
+    story: "书籍是进步的阶梯",
   },
   {
     id: "longyan-fujian-4",
@@ -107,7 +107,7 @@ const QKUNIO_PHOTOS = [
     width: 6000,
     height: 4000,
     alt: "Xiamen Fujian frame 2",
-    story: "海边的颜色很松弛，所有远方都暂时停在眼前。",
+    story: "厦门的跨海大桥",
   },
 ]
 
@@ -173,7 +173,7 @@ export function HomeMasonryGallery() {
                   </div>
                   <div className="absolute inset-0 grid grid-rows-[auto_1fr_auto] gap-4 rounded-3xl border border-border bg-background p-4 text-primary shadow-inner [backface-visibility:hidden] [transform:rotateY(180deg)] md:p-6">
                     <span className="font-fulu-melody text-2xl md:text-3xl">Qkunio</span>
-                    <p className="font-written-sc flex items-center text-balance text-center text-[clamp(1.35rem,5vw,2.6rem)] leading-[1.45] text-primary">
+                    <p className="font-written-sc flex items-center justify-center text-balance text-center text-[clamp(0.7rem,2.5vw,1.3rem)] leading-[1.45] text-primary">
                       {photo.story}
                     </p>
                     <span className="max-w-[12rem] text-xs text-muted-foreground md:text-sm">
