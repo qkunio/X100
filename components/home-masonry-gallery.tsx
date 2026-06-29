@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import { motion } from "framer-motion"
 
 const QKUNIO_PHOTOS = [
@@ -55,6 +56,16 @@ const QKUNIO_PHOTOS = [
 ]
 
 export function HomeMasonryGallery() {
+  const [flippedPhotoIds, setFlippedPhotoIds] = useState<string[]>([])
+
+  const togglePhoto = (photoId: string) => {
+    setFlippedPhotoIds((currentPhotoIds) =>
+      currentPhotoIds.includes(photoId)
+        ? currentPhotoIds.filter((currentPhotoId) => currentPhotoId !== photoId)
+        : [...currentPhotoIds, photoId]
+    )
+  }
+
   return (
     <section className="relative z-10 bg-background px-4 pb-24 pt-6 md:px-8 md:pb-32">
       <div className="mx-auto max-w-[1800px]">
@@ -82,16 +93,36 @@ export function HomeMasonryGallery() {
               transition={{ duration: 0.55, delay: (index % 6) * 0.04 }}
               viewport={{ once: true, margin: "-80px" }}
             >
-              <div
-                className="group relative w-full overflow-hidden rounded-3xl bg-secondary"
+              <button
+                type="button"
+                aria-label={photo.alt}
+                aria-pressed={flippedPhotoIds.includes(photo.id)}
+                onClick={() => togglePhoto(photo.id)}
+                className="group block w-full cursor-pointer rounded-3xl text-left outline-none [perspective:1400px] focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                 style={{ aspectRatio: `${photo.width} / ${photo.height}` }}
               >
-                <img
-                  src={photo.src}
-                  alt={photo.alt}
-                  className="absolute inset-0 size-full object-cover transition duration-700 group-hover:scale-105 group-hover:opacity-90"
-                />
-              </div>
+                <motion.div
+                  className="relative size-full rounded-3xl shadow-sm transition-shadow duration-300 [transform-style:preserve-3d] group-hover:shadow-xl"
+                  animate={{
+                    rotateY: flippedPhotoIds.includes(photo.id) ? 180 : 0,
+                  }}
+                  transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  <div className="absolute inset-0 overflow-hidden rounded-3xl bg-secondary [backface-visibility:hidden]">
+                    <img
+                      src={photo.src}
+                      alt={photo.alt}
+                      className="absolute inset-0 size-full object-cover transition duration-700 group-hover:scale-105 group-hover:opacity-90"
+                    />
+                  </div>
+                  <div className="absolute inset-0 flex flex-col justify-between rounded-3xl border border-border bg-background p-6 text-primary shadow-inner [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                    <span className="font-fulu-melody text-3xl">Qkunio</span>
+                    <span className="max-w-[12rem] text-sm text-muted-foreground">
+                      {photo.alt}
+                    </span>
+                  </div>
+                </motion.div>
+              </button>
             </motion.div>
           ))}
         </div>
