@@ -67,8 +67,8 @@
 }
 
 @font-face {
-  font-family: "Written SC";
-  src: url("/X100/fonts/WrittenSC-Regular.ttf") format("truetype");
+  font-family: "SanJi JinSong";
+  src: url("/X100/fonts/SanJiJinSongJianTi-XianXi-2.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -80,7 +80,12 @@
   }
   body {
     @apply font-sans text-base antialiased bg-background text-foreground transition-colors duration-300;
+    font-family: "SanJi JinSong", serif;
   }
+}
+
+body *:not(svg):not(svg *) {
+  font-family: "SanJi JinSong", serif;
 }
 
 /* Add some spacing for the fixed header */
@@ -180,31 +185,34 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-old-london);
+  font-family: "SanJi JinSong", serif;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.07em;
 }
 
 /* Font family */
+.font-sans,
+.font-serif,
+.font-mono,
 .font-old-london {
-  font-family: var(--font-old-london);
+  font-family: "SanJi JinSong", serif;
 }
 
 .font-boulevard-saint-denis {
-  font-family: var(--font-boulevard-saint-denis);
+  font-family: "SanJi JinSong", serif;
 }
 
 .font-schools-out {
-  font-family: var(--font-schools-out);
+  font-family: "SanJi JinSong", serif;
 }
 
 .font-fulu-melody {
-  font-family: var(--font-fulu-melody);
+  font-family: "SanJi JinSong", serif;
 }
 
 .font-written-sc {
-  font-family: "Written SC", serif;
+  font-family: "SanJi JinSong", serif;
 }
 
 /* Dynamic frame layout */
