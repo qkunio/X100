@@ -49,7 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${inter.variable} ${oldLondon.variable} ${boulevardSaintDenis.variable} ${schoolsOut.variable} ${fuluMelody.variable}`}
       suppressHydrationWarning
     >
-      <body>
+      <body suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <SafariThemeColor />
           <SoundEffects />

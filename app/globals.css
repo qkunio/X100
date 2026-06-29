@@ -66,6 +66,14 @@
   }
 }
 
+@font-face {
+  font-family: "Written SC";
+  src: url("/X100/fonts/WrittenSC-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -193,6 +201,10 @@ h6 {
 
 .font-fulu-melody {
   font-family: var(--font-fulu-melody);
+}
+
+.font-written-sc {
+  font-family: "Written SC", serif;
 }
 
 /* Dynamic frame layout */

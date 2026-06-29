@@ -11,6 +11,7 @@ const QKUNIO_PHOTOS = [
     width: 3240,
     height: 4864,
     alt: "Jeju Korea frame 2",
+    story: "傍晚的码头把光收进水里，船只安静得像刚写完的一句话。",
   },
   {
     id: "jeju-korea-1",
@@ -18,6 +19,7 @@ const QKUNIO_PHOTOS = [
     width: 1000,
     height: 750,
     alt: "Jeju Korea frame 1",
+    story: "风从树影里经过，远处的海面替这一刻慢慢发亮。",
   },
   {
     id: "jeju-korean-3",
@@ -25,6 +27,7 @@ const QKUNIO_PHOTOS = [
     width: 3621,
     height: 2926,
     alt: "Jeju Korean frame 3",
+    story: "路过的人和云都没有停下，只留下柔软的一秒。",
   },
   {
     id: "xiamen-fujian-1",
@@ -32,6 +35,7 @@ const QKUNIO_PHOTOS = [
     width: 3629,
     height: 1901,
     alt: "Xiamen Fujian frame 1",
+    story: "厦门的风很轻，像把一段旅行折进了蓝色里。",
   },
   {
     id: "longyan-fujian-1",
@@ -39,6 +43,7 @@ const QKUNIO_PHOTOS = [
     width: 1080,
     height: 1920,
     alt: "Longyan Fujian frame 1",
+    story: "山城的日常藏在转角，抬头时，光正好落下来。",
   },
   {
     id: "longyan-fujian-2",
@@ -46,6 +51,7 @@ const QKUNIO_PHOTOS = [
     width: 1080,
     height: 1920,
     alt: "Longyan Fujian frame 2",
+    story: "一条街慢慢醒来，熟悉的声音从远处靠近。",
   },
   {
     id: "longyan-fujian-3",
@@ -53,6 +59,7 @@ const QKUNIO_PHOTOS = [
     width: 810,
     height: 1440,
     alt: "Longyan Fujian frame 3",
+    story: "雨后的空气很干净，连影子都变得清楚。",
   },
   {
     id: "huangxing-park-shanghai-1",
@@ -60,6 +67,7 @@ const QKUNIO_PHOTOS = [
     width: 1448,
     height: 1086,
     alt: "Huangxing Park Shanghai",
+    story: "公园里的一小片安静，替城市保留了呼吸。",
   },
   {
     id: "jiading-library-tongji-1",
@@ -67,6 +75,7 @@ const QKUNIO_PHOTOS = [
     width: 1266,
     height: 845,
     alt: "Jiading Library Tongji",
+    story: "书页没有声音，光却在墙面上读了很久。",
   },
   {
     id: "longyan-fujian-4",
@@ -74,6 +83,7 @@ const QKUNIO_PHOTOS = [
     width: 3488,
     height: 2378,
     alt: "Longyan Fujian frame 4",
+    story: "回家的路总有熟悉的坡度，走慢一点就会看见风景。",
   },
   {
     id: "longyan-fujian-5",
@@ -81,6 +91,7 @@ const QKUNIO_PHOTOS = [
     width: 2598,
     height: 4617,
     alt: "Longyan Fujian frame 5",
+    story: "高处的天空离人很近，像一封没有寄出的信。",
   },
   {
     id: "xiamen-fujian-2",
@@ -88,6 +99,7 @@ const QKUNIO_PHOTOS = [
     width: 6000,
     height: 4000,
     alt: "Xiamen Fujian frame 2",
+    story: "海边的颜色很松弛，所有远方都暂时停在眼前。",
   },
 ]
 
@@ -151,9 +163,12 @@ export function HomeMasonryGallery() {
                       className="absolute inset-0 size-full object-cover transition duration-700 group-hover:scale-105 group-hover:opacity-90"
                     />
                   </div>
-                  <div className="absolute inset-0 flex flex-col justify-between rounded-3xl border border-border bg-background p-6 text-primary shadow-inner [backface-visibility:hidden] [transform:rotateY(180deg)]">
-                    <span className="font-fulu-melody text-3xl">Qkunio</span>
-                    <span className="max-w-[12rem] text-sm text-muted-foreground">
+                  <div className="absolute inset-0 grid grid-rows-[auto_1fr_auto] gap-4 rounded-3xl border border-border bg-background p-4 text-primary shadow-inner [backface-visibility:hidden] [transform:rotateY(180deg)] md:p-6">
+                    <span className="font-fulu-melody text-2xl md:text-3xl">Qkunio</span>
+                    <p className="font-written-sc flex items-center text-balance text-center text-[clamp(1.35rem,5vw,2.6rem)] leading-[1.45] text-primary">
+                      {photo.story}
+                    </p>
+                    <span className="max-w-[12rem] text-xs text-muted-foreground md:text-sm">
                       {photo.alt}
                     </span>
                   </div>
