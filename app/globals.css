@@ -5,6 +5,8 @@
 :root {
   --font-inter: "Inter", sans-serif;
   --font-old-london: "Old London";
+  --font-boulevard-saint-denis: "Boulevard Saint Denis";
+  --font-schools-out: "Schools Out";
 }
 
 @layer utilities {
@@ -179,6 +181,22 @@ body.sounds-muted a {
   font-style: normal;
   font-display: swap;
          }
+
+@font-face {
+  font-family: "Boulevard Saint Denis";
+  src: url("/fonts/Boulevard-Saint-Denis-1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Schools Out";
+  src: url("/fonts/Schools-Out-2.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
     
          h1,
          h2,
@@ -196,6 +214,14 @@ body.sounds-muted a {
 /* Font family */
 .font-old-london {
   font-family: var(--font-old-london);
+}
+
+.font-boulevard-saint-denis {
+  font-family: var(--font-boulevard-saint-denis);
+}
+
+.font-schools-out {
+  font-family: var(--font-schools-out);
 }
 
 /* Dynamic frame layout */

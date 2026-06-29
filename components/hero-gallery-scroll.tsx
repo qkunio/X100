@@ -8,11 +8,11 @@ import { motion } from "framer-motion"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 const IMAGES = [
-  "/Morocco/cover.webp",
-  "/new zealand/cover.jpg",
-  "/Tokyo/cover.jpg",
-  "/Bali/cover.jpeg",
-  "/Iceland/cover.jpg",
+  "/qkunio/Jeju-Korea-2.JPG",
+  "/qkunio/Jeju-Korea-1.JPG",
+  "/qkunio/%E9%BE%99%E5%B2%A9-%E7%A6%8F%E5%BB%BA-1.JPG",
+  "/qkunio/%E5%8E%A6%E9%97%A8-%E7%A6%8F%E5%BB%BA-1.JPG",
+  "/qkunio/%E9%BE%99%E5%B2%A9-%E7%A6%8F%E5%BB%BA-2.JPG",
 ]
 
 export function HeroGalleryScroll() {
@@ -33,42 +33,18 @@ export function HeroGalleryScroll() {
         ))}
       </BentoGrid>
 
-      <ContainerScale className="relative z-10 text-center">
-        <motion.h1
-          className="max-w-xl text-5xl tracking-tighter text-primary text-backdrop-invert"
+      <ContainerScale
+        className="relative z-10 px-6 text-center"
+        style={{ translate: "-50% -30%" }}
+      >
+        <motion.p
+          className="font-schools-out max-w-[92vw] text-[clamp(3.25rem,14vw,4.5rem)] leading-[1.15] tracking-normal text-primary text-backdrop-invert md:max-w-5xl md:text-[clamp(4.5rem,10vw,6rem)] md:leading-none"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          X100
-        </motion.h1>
-        <motion.p
-          className="my-6 max-w-xl text-primary "
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-           A Next.js portfolio for professional photographers, designed to flawlessly showcase powerful visual stories.        </motion.p>
-        <div className="flex items-center flex-col md:flex-row justify-center gap-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-          >
-            <AnimatedButton href="/showcase" variant="outline" icon={<ArrowRight size={16} />}>
-              Showcase
-            </AnimatedButton>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-          >
-            <AnimatedButton href="/about" variant="outline" icon={<ArrowRight size={16} />}>
-              About
-            </AnimatedButton>
-          </motion.div>
-        </div>
+          Lets Explore the World
+        </motion.p>
       </ContainerScale>
     </ContainerScroll>
   )
